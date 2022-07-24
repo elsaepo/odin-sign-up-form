@@ -31,6 +31,9 @@ h2, p {
     height: 100vh;
 }
 
+
+/* Hero image and banner */
+
 #image-container {
     flex-basis: 500px;
     background-image: url("images/ferns.jpg");
@@ -47,6 +50,7 @@ h2, p {
     border-bottom: 1px solid white;
 }
 
+
 #sign-up-container {
     flex-basis: 900px;
     background-color: #f5f5f5;
@@ -59,6 +63,9 @@ h2, p {
 .sign-up-section {
     padding: 5% 10%;
 }
+
+
+/* Form input elements */
 
 .form-box {
     background-color: #bdd8c0;
@@ -106,6 +113,9 @@ h2, p {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+/* Submission elements */
+
 .submit-box {
     padding-top: 3%;
 }
@@ -121,6 +131,15 @@ h2, p {
     font-weight: 500;
 }
 
+.submit-box button:hover {
+    background-color: rgb(184, 146, 103);
+    cursor: pointer;
+}
+
+.submit-box button:active {
+    background-color: rgb(235, 217, 196);
+}
+
 .submit-box p {
     font-weight: 500;
 }
@@ -128,4 +147,17 @@ h2, p {
 .submit-box a {
     text-decoration: none;
     color:rgb(76, 107, 76);
+}
+
+#input-container .error {
+    border: 2px solid red;
+}
+
+#input-container .pass-match-error {
+    font-size: 0.8rem;
+    position: relative;
+    top: 4px;
+    color: red;
+    height: 0;
+    display: none;
 }
