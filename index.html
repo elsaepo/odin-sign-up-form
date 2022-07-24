@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <title>Free Fern Facts</title>
-        <!-- bg image credit: https://unsplash.com/photos/OOE4xAnBhKo -->
-    </head>
-    
-    <body>
-        <div id="app-container">
-            <div id="image-container">
-                <div class="banner">
-                    <h1>FERNS</h1>
-                </div>
-            </div>
-            <div id="sign-up-container">
-                <div class="sign-up-section">
-                    <h2>These are ferns. They're been on the earth for 360 million years, but you'll still struggle to keep it alive in your bathroom. Sign up now to receive more fun free fern facts!</h2>
-                    <h2>You <em>know</em> you want to.</h2>
-                </div>
-                <div class="sign-up-section form-box">
-                    <h2>Let's do this!</h2>
-                    <form action="submit">
-                        <label for="">FIRST NAME</label><input type="text">
-                        <label for="">LAST NAME</label><input type="text">
-                        <label for="">EMAIL</label><input type="email">
-                        <label for="">PHONE NUMBER</label><input type="number">
-                        <label for="">PASSWORD</label><input type="password">
-                        <label for="">CONFIRM PASSWORD</label><input type="password">
-                    </form>
-                </div>
-                <div class="sign-up-section">
-                    <input type="submit">Create Account</input>
-                    <p>Already have an account? <a href="">Log in.</a></p>
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Free Fern Facts</title>
+    <!-- bg image credit: https://unsplash.com/photos/OOE4xAnBhKo -->
+</head>
+
+<body>
+    <div id="app-container">
+        <div id="image-container">
+            <div class="banner">
+                <h1>FERNS</h1>
             </div>
         </div>
-    </body>
+        <div id="sign-up-container">
+            <section class="sign-up-section">
+                <h2>These are ferns. They've been on the earth for 360 million years, but you'll still struggle to keep
+                    it alive in your bathroom. Sign up now to receive more fun free fern facts!</h2>
+                <br>
+                <h2>Or don't, because this form does nothing.</h2>
+            </section>
+            <section class="sign-up-section form-box">
+                <h2>Let's do this!</h2>
+                <form action="./index.html" id="sign-up-form">
+                    <div id="input-container">
+                        <div class="input-item"><label for="fname">
+                                <p>FIRST NAME *</p>
+                            </label><input type="text" id="fname" name="fname" required></div>
+                        <div class="input-item"><label for="lname">
+                                <p>LAST NAME *</p>
+                            </label><input type="text" id="lname" name="lname" required></div>
+                        <div class="input-item"><label for="email">
+                                <p>EMAIL *</p>
+                            </label><input type="email" id="email" name="email" required></div>
+                        <div class="input-item"><label for="phone">
+                                <p>PHONE NUMBER</p>
+                            </label><input type="number" id="phone" name="phone"></div>
+                        <div class="input-item"><label for="">
+                                <p>PASSWORD *</p>
+                            </label><input type="password" id="fname" name="fname" required></div>
+                        <div class="input-item"><label for="">
+                                <p>CONFIRM PASSWORD *</p>
+                            </label><input type="password" id="fname" name="fname" required></div>
+                    </div>
+                </form>
+            </section>
+            <section class="sign-up-section submit-box">
+                <button type="submit" form="sign-up-form">Fern me up!</button>
+                <p>Already a fern yearner? <a href="">Log in.</a></p>
+            </section>
+        </div>
+    </div>
+</body>
+
 </html>
