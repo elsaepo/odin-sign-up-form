@@ -1,4 +1,3 @@
-// const userForm = document.querySelector("#sign-up-form");
 const pass = document.querySelector("#pass");
 const passConfirm = document.querySelector("#passconfirm");
 const submitButton = document.querySelector("#submit-button")
@@ -18,14 +17,11 @@ const checkPassword = function(pass1, pass2){
     };
 }
 
-// userForm.onsubmit
-
 submitButton.addEventListener("click", function(event){
+    checkPassword();
     if (!checkPassword(pass.value, passConfirm.value)){
-        this.classList.add("error");
+        // If checkPassword returns false, don't submit the form (default action)
         event.preventDefault();
-    } else {
-        this.classList.remove("error");
-        return;
     }
+    return;
 })
