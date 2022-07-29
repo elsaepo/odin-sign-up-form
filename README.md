@@ -21,3 +21,4 @@ This task was done to work on page layouts and basic front-end form functionalit
 
 * Further understanding of **form syntax**, and laying out and linking labels.
 * Understanding the **default event** of a form submission button, and how to deactivate it if conditions aren't met.
+* Implementing client-side **form validation**.
